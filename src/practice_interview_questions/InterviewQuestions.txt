@@ -1,0 +1,190 @@
+1. What are classes in java?
+    - first package needs to be created and then create a class inside it;
+    - syntax to create a class first it should have an access modifier EX: public
+    - class keyword and then class name
+    - class name should follow CamelCase naming convention [ standard ]
+
+2. How many main can there be in a class?
+    - only one main method
+
+3. What is a main method?
+    - public static void main(String [] args){}
+
+4. What are identifiers in java?
+    - variables names, class names, methods names.
+
+5. System.out.print() vs System.out.println()
+    - System.out.print() on the same line
+    - System.out.println() prints out the output in the console on a new line
+
+6. Reserved keywords in java?
+    - the words that have meaning there are around 53 of them
+    EX: public, class, boolean and some more words.
+
+**Length of a comment on a  single line in an IDE
+
+7. What are data types and how many types there are?
+    -2 types: Primitive and Non-primitive
+        Primitive [simple, basic]: (Integer types): int, byte, long, short; (Floating types): double, float;
+             and boolean, char;
+            - Primitive data types are pre defined [means these already have been defined by Java]
+            - they start with lower case letter
+            - size is fixed
+        Non-primitive: Classes, Interfaces, Arrays, String, System etc.
+
+8. Long data type?
+    -EX: long numberOfViews = 1_000_000_000L;
+
+9. What is a variable in Java?
+    - box to store an information or piece of data
+    - to declare a variable we first need to provide a data type for it and then provide a name for it and end it with semi colon;
+    - [data type] [name of variable] = [value] [;] -> syntax on initialization of a variable;
+
+10. Is it possible to declare and initialize multiple variables inline?
+    - int a, b, c = 2; -> this is valid 3 are declared and only 1 is initialized [c=2];
+
+11. What is main method? And it's syntax?
+    - public static void main(String[] args){}
+    - we declare and initialize local variables
+    - main() it's the entry point
+    - gateway to our program or application to start executing
+12. {} -> curly braces;
+    [] -> brackets or square brackets;
+    () -> parentheses;
+    ; -> semi colon;
+    : -> colon;
+    , -> comma;
+    . -> dot;
+    / -> slash or forward slash;
+    | -> pipe;
+    \ -> back slash;
+    '' -> single quote;
+    "" -> double quotes;
+    * -> asterisk;
+    & -> ampersand;
+    ^ -> caret;
+    # -> pound;
+    @ -> at the rate;
+
+13. char variable1 = 'a', variable2;
+    variable2 = "Hello"; // compile error because variable2 is char type but I am trying to assign String to it
+
+14. primitive data types?
+    - 8 of them: byte, short, int, float, long, char, boolean, double;
+    - they have predefined data types and size;
+    - they do not have any methods;
+    - starts with lower case;
+
+15. What is type casting?
+        - It is converting one data type to another;
+        - Implicit and Explicit
+            - Implicit [automatically] -> it happens automatically when we convert from smaller to larger data type;
+            - Explicit [manually] -> when we convert from larger to smaller data type, because we might loose some value in our data
+            EX: Explicit type casting - from double to int
+            double d1 = 12.34;
+            int i = d1 -> incompatible types compile error and in order to fix this we need to manually type cast it
+            as follows int i = (int) d1; Now variable i has the value of 12;
+
+Divisor: the number being used to divide into another number.
+Dividend: the number being divided by the divisor.
+Quotient: the answer.
+
+16. Which of the below will compile?
+        - int x = 1.0; // Not compile
+        - short y = 1223445; // Not compile because short can only store up tp 32,767
+        - long l1 = 12L; // Compile as long as the value has the postfix of 'l' or 'L'
+        - int i = 999F; // Not compile because 'f' is only added to float data type as a postfix
+
+17. short sh1 = 12;
+        short sh2 = 10;
+        short shSum = sh1 + sh2; // Not compile because Java will convert both of the operands to an int data type only then it will complete the
+        // math operation
+
+18. int x = 3;
+
+    int y = ++x * 5 / x-- + --x; // highest precedence is auto increment/decrement
+    ++x -> pre increment - increments or increases the value of the variable by 1 in the same statement
+    --x -> pre decrement - decrements or decreases the value of the variable by 1 in the same statement
+    x++ -> post increment - increases the value of that variable by 1 on the next statement
+    x-- -> post decrement - decrements or decreases the value of the variable by 1 on the next statement
+
+    1. 4 * 5 / x-- + --x;
+    2. 4 * 5 / 4 + --x;
+    3. 4 * 5 / 4 + 2;
+    4. 20 / 4 + 2;
+    5. 5 + 2;
+    6. y = 7.
+
+19. How do I insert a text in double quotes within my String variable?
+        EX: String s = "I \"love\" coding." -> Escape sequences help us insert special characters within our text
+        Expected output: I "love" coding.
+
+20. How to insert a new line within a text?
+        String s = "I \nlove \njava" -> used to insert a new line within a text
+
+21. What is explicit/implicit type casting?
+        Explicit type casting is converting a data type to another such as from larger to smaller data type;
+
+        EX: double num1 = 12.34;
+            int num2 = (int) num1; since double is larger data type than int we have to explicitly type cast it because
+            are using some data.
+        Implicit -> conversion of type from smaller to larger, it doesn't require any explicit casting;
+
+22. What are logical operators used for?
+        && and ||
+        && -> evaluates to true if both sides are true;
+        || -> evaluates to true if only one side is true;
+
+        EX: int x = 2;
+            int y = 3;
+
+            boolean bool = ++x == y && y++ >= x; //true because the value of x is 3 and y is also 3 until the next statement;
+
+23. Ternary operators gets the name from having 3 operands:
+        EX: exp1 ? exp2 : exp3
+            Boolean bool = 2 > 1 ? true : false;
+
+            x++ -> unary [single] operand;
+            int x = 1; int y = 2; x = x + y; -> binary;
+            x > y -> binary;
+
+24. How can I swap the values of these 2 variables?
+
+        int x = 100;
+        int y = 10;
+
+        Expected output: x = 10 and y = 100;
+
+25. Will there be any compiler error for the initialization of the below variables?
+
+        int i = 65.0; // double can't be in int
+        float f = 23.76; // post fix 'F' or 'f'
+        long l = 1234567; // post fix of 'L' or 'l'
+        char c = "a"; // single quote should be used
+
+26. Depending on the test score result I want to print out if student has passed the the exam or not.
+
+        if the score is less than or equal to 50 I want to print out "FAIL"
+        and if greater than or equal to 50 then "PASS";
+        String pass = "PASS";
+        String fail = "FAIL";
+        int testResult = 73;
+
+27. Will this compile?
+
+        short s1 = 123;
+        short s2 = 456;
+
+        short sum = s1 + s2; // No, it won't compile because the arithmetic operations
+        // carry out in int data type. So the fix is [short sum = (short) s1 + s2]
+
+28. Are these 2 equal?
+
+        int i = 50;
+        double num = 50.00;
+
+        String result = i == num ? "Equal" : "Not equal"; // ternary operator
+        // equal because int and double are being compared so java will convert
+        // the smaller type to larger data type to perform this comparison operation
+
+29.
