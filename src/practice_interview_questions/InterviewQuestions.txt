@@ -187,4 +187,6 @@ Quotient: the answer.
         // equal because int and double are being compared so java will convert
         // the smaller type to larger data type to perform this comparison operation
 
-29.
+29. 10/25
+
+34. 10/26
