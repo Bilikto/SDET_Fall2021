@@ -69,7 +69,7 @@ public class PerimeterOfShapes {
                 if (a == b && b == c && c == d) {
                     typeOfTheShape = "Square";
                 } else if ((a == b || c == d) || (b == c || a == d) || (b == d || c ==a)) {
-                    typeOfTheShape = "Rectangle";*
+                    typeOfTheShape = "Rectangle";
                 } else {
                     typeOfTheShape = "Trapezoid";
                 }
