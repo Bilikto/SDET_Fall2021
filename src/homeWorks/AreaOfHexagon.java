@@ -1,4 +1,4 @@
-package HomeWorks;
+package homeWorks;
 
 public class AreaOfHexagon {
     public static void main(String[] args) {

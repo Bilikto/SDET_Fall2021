@@ -1,4 +1,4 @@
-package HomeWorks;
+package homeWorks;
 
 public class PrintMicrosoftCEO {
     public static String eMail = "@microsoft.com";

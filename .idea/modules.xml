@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fall2021SDET.iml" filepath="$PROJECT_DIR$/Fall2021SDET.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../OCA_Practice/OCA_Practice.iml" filepath="$PROJECT_DIR$/../../OCA_Practice/OCA_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OCA_Practice/JAVA_OCA_EXAM.iml" filepath="$PROJECT_DIR$/../../OCA_Practice/JAVA_OCA_EXAM.iml" />
     </modules>
   </component>
 </project>

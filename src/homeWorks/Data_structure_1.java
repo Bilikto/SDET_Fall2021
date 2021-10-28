@@ -1,4 +1,4 @@
-package HomeWorks;
+package homeWorks;
 
 public class Data_structure_1 {
 

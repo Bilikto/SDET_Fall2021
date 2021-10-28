@@ -1,8 +1,8 @@
-package practice_interview_questions.solutions;
+package interview_questions_Baha.solutions;
 
 import java.util.Scanner;
 
-public class InterviewQuestionsClass {
+public class InterviewQuestionsPractice {
     public static void main(String[] args) {
         //24 swap elements
 //        int x = 100;

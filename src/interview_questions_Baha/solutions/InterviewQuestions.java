@@ -1,4 +1,4 @@
-package interview_questions_Baha;
+package interview_questions_Baha.solutions;
 
 import java.util.Scanner;
 

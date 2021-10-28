@@ -96,8 +96,8 @@ Quotient: the answer.
         - int i = 999F; // Not compile because 'f' is only added to float data type as a postfix
 
 17. short sh1 = 12;
-        short sh2 = 10;
-        short shSum = sh1 + sh2; // Not compile because Java will convert both of the operands to an int data type only then it will complete the
+    short sh2 = 10;
+    short shSum = sh1 + sh2; // Not compile because Java will convert both of the operands to an int data type only then it will complete the
         // math operation
 
 18. int x = 3;
@@ -187,6 +187,115 @@ Quotient: the answer.
         // equal because int and double are being compared so java will convert
         // the smaller type to larger data type to perform this comparison operation
 
-29. 10/25
+29. What is a variable in java?
 
-34. 10/26
+    - variable is a storage that stores a data;
+    - a number, a character, boolean, class variables [objects] etc.
+    - to identify certain data from our application, it's variable name that determines which variable;
+    - it's convenient to store data
+    - it's reduces repetition, and redundancy
+    - easy to maintain or update;
+    - being able to control from one place vs many areas;
+
+30. Can operator be stored in a variable?
+
+    EX: String equalToSymbol = "=";
+    char equalToChar = '=';
+
+31. How do we compare 2 string variables?
+
+    EX: String a = "Devx";
+        String b = "devx";
+
+        boolean bool = a == b; // returns false because == operator is case sensitive;
+
+32. What is the purpose on using if statements?
+    - if statement is control flow
+    - to put a condition
+    - conditional statement
+    - it works with boolean expression or the expression should have boolean outcome
+    - if statements can be implemented/used without else statement
+
+    we also have else statements:
+    - which gets executed when if statements is false
+    - else statement cannot be without if
+
+33. Write a logic/code for thermostat?
+
+   // it's set on automatic which turns on the heater or AC
+   // depending on the current temp in your house
+   // if it's above desired temp then turnOnAC()
+   // else turnOnHeat() [if it's colder than desired temp]
+
+    Ex: int currentTemp = 60;
+        int desiredTemp = 72;
+
+        if(currentTemp <= desiredTemp){
+            System.out.println("Turn on the heater!");
+        } else {
+            System.out.println("Turn on the AC!");
+        }
+ ======================== ============ ============ ============
+    Convert the above if else to ternary operator:
+
+    Ex: int currentTemp = 60;
+        int desiredTemp = 72;
+
+     String heaterOrAc = currentTemp <= desiredTemp ? "Turn on the heater!" : "Turn on the AC!";
+     System.out.print(heaterOrAc);
+
+34. Given an int variable. Print out if it's even or odd using ternary operator?
+
+    EX: int num = 7;
+
+    // to find out if the number is even or odd, we use modulo [%] 2 and if the remainder is 0 then
+    // it is even and if it's not then it's odd.
+
+    String evenOrOdd = num % 2 == 0 ? "Even" : "Odd";
+    // we have a new variable string called evenOrOdd and we are seeing if num int variable is even or odd
+    // and for that we use modulo 2 to see if it's even or odd
+    // if it's equal to 0 then we will assign "Even" and if not then "Odd" will be assigned to evenOrOdd variable
+
+    // let's convert this to if/else
+    EX: int num = 7;
+
+    String evenOrOdd = "";
+
+    if (num % 2 == 1) {
+       evenOrOdd = "Odd";
+    } else {
+        evenOrOdd = "Even";
+    }
+
+    System.out.println(evenOrOdd);
+
+35. int x = 0;
+        x++; // 0
+        --x; // 0
+        x += 2; //
+        int y; // declaring
+        x +=y; // compile time error because 'y' has not been initialized yet
+        System.out.print(x);
+
+36. Constant variables in java? What are they?
+
+    - final keyword is used when initializing it;
+    - naming is all caps; [EX: final String DOB]
+    - their values cannot be changed or reassigned;
+
+37. Different types of type casting?
+    - 2 types: implicit and explicit
+        - Implicit [automatic] -> data type conversion happens automatically [EX: smaller data type to larger data type]
+        - Explicit [manually] -> has to be manually type casted from larger to smaller [EX: from double to int]
+            - why should it be explicit: it's java's way of warning us and agreeing to loosing some data.
+
+38. Help me create a class called "MyClass" and it's not in the default package so the package name is "my_package";
+    package my_package;
+    public class MyClass {
+
+        public static void main(String [] args) {
+
+            System.out.print("Devxschool");
+        }
+    }
+
