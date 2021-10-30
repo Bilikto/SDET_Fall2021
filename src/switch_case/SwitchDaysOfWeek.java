@@ -1,5 +1,7 @@
 package switch_case;
 
+import java.util.Scanner;
+
 public class SwitchDaysOfWeek {
     public static void main(String[] args) {
 
@@ -14,11 +16,10 @@ public class SwitchDaysOfWeek {
                 System.out.println("Weekday");
                 break;
             case "Saturday":
-            case "Sanday":
+            case "Sunday":
                 System.out.println("Weekend");
                 break;
         }
-
 
 
     }
