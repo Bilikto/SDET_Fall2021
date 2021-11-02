@@ -299,3 +299,16 @@ Quotient: the answer.
         }
     }
 
+39. Tech stack:
+    - the different software technology tools and software applications
+
+40. Get an input form the user about their age, Name, last name, favorite quote?
+
+    EX: Scanner scan = new Scanner(System.in); // created an object of Scanner class
+    // that way we can have access to the methods by typing the objects name and import the methods
+    // the methods such as: nextInt(), nextBoolean(), nextLine() etc.
+
+    int age = 32;
+    String name = "Baha";
+
+41.
