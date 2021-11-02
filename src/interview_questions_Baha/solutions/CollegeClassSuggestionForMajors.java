@@ -17,20 +17,6 @@ public class CollegeClassSuggestionForMajors {
 
         Scanner scanner = new Scanner(System.in);
 
-//        String excel = "Excel";
-//        String macro = "Macro";
-//        String microEcon = "Micro Economics";
-//        String math1 = "Math 1";
-//        String math2 = "Math 2";
-//        String java = "Java";
-//        String calculus = "Calculus";
-//        String dataBase = "Database";
-//        String cyberSec = "Cybersecurity";
-//        String publicSpeaking = "Public speaking";
-//        String lang = "Body language";
-//        String psychology = "Psychology";
-//        String neuroscience = "Neuroscience";
-
         System.out.println("Enter your Major...");
         String major = scanner.nextLine().toLowerCase();
 
