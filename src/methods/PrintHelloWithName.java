@@ -7,11 +7,13 @@ public class PrintHelloWithName {
 
     public static void main(String[] args) {
 
-    sayHelloToUser();
+        sayHelloToUser();
 
-    System.out.println("Please, enter yourage: ");
-    int age = scanner.nextInt();
-    printAge(age);
+        System.out.println("Please, enter your age: ");
+        int age = scanner.nextInt();
+        printAge(age);
+
+
 
     }
 
@@ -19,7 +21,6 @@ public class PrintHelloWithName {
 
         System.out.println("Please, enter your name: ");
         String name = scanner.nextLine();
-
         System.out.println("Hello " + name);
     }
 
