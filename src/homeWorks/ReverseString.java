@@ -16,7 +16,6 @@ public class ReverseString {
         System.out.println("Reversed word: " + nstr);
 
 
-
         //Using StringBuilder
         StringBuilder str1 = new StringBuilder();
         str1. append(str).reverse();
