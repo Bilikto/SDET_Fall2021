@@ -1,4 +1,4 @@
-package practice_with_fenton;
+package practice_with_Fenton;
 
 import java.util.Scanner;
 
