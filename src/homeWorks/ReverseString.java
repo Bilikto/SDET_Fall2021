@@ -3,7 +3,7 @@ package homeWorks;
 public class ReverseString {
     public static void main(String[] args) {
         String str = "SDET";
-        String nstr = " ";
+        String nstr = "";
         char ch;
 
         System.out.println("Original word: " + str);
@@ -18,7 +18,7 @@ public class ReverseString {
 
         //Using StringBuilder
         StringBuilder str1 = new StringBuilder();
-        str1. append(str).reverse();
+        str1.append(str).reverse();
         System.out.println("Reversed using StringBuilder: " + str1);
 
     }
