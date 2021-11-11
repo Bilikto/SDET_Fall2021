@@ -2,8 +2,16 @@ package practice_with_Fenton;
 
 import homeWorks.Strings;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
+
 public class StringClass {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
         //creation String
         // String str1 = "DevX"; // -> "literal"
@@ -49,6 +57,18 @@ public class StringClass {
             System.out.println("School3: " + school3); //School3:Princeton
             System.out.println("School2: " + school2); //School2:Standford
 
+//            String myDate = "13/08/2021 07:28";
+//            //System.out.println(myDate);
+//
+//            DateTimeFormatter inputParser = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm");
+//            LocalDate date = LocalDate.parse(myDate, inputParser);
+//            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy hh mm", Locale.ENGLISH);
+//            String output = date.format(formatter);
+//            System.out.println(output);
+
+//            DateFormat df = new SimpleDateFormat("yy/MM/dd hh:mmZ");
+//            Date result =  df.parse(myDate);
+//            System.out.println(result);
 
     }
 
