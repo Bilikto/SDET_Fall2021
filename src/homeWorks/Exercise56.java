@@ -6,8 +6,8 @@ public class Exercise56 {
         int y = 20;
         int p = 3;
         System.out.println(result(x, y, p)); //5
-//        System.out.println(20/3);
-//        System.out.println(5/3);
+//        System.out.println(20/3); //6
+//        System.out.println(5/3); //1
     }
 
     public static int result(int x, int y, int p) {
