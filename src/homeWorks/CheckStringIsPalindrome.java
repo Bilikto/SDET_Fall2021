@@ -1,4 +1,4 @@
-package loops.while_loop;
+package homeWorks;
 
 import java.util.Scanner;
 
