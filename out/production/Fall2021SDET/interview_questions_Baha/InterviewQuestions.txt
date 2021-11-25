@@ -395,4 +395,5 @@ Quotient: the answer.
      * abbreviation is shortened form of a word.
          EX: IL, MI, ME -> state name abbreviations;
 
-47.
+47. Tell me about Strings in Java?
+
