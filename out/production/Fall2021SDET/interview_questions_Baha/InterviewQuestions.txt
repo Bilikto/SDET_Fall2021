@@ -423,3 +423,29 @@ Quotient: the answer.
     - length() - returns int which is the number of characters [elements] in the string;
     - isEmpty() - returns boolean, by checking if the given String contains any char of not;
 
+48. Tell me about arrays in Java?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
