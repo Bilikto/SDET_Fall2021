@@ -78,6 +78,15 @@ public class TwoD_Array {
             System.out.println(Arrays.toString(chars));
         }
 
+        System.out.println("===========================================================================");
+
+        String[][] phones = {{"Iphone x", "Iphone 11"}, {"Samsung Galaxy", "Samsung Note10"}, {"Windows phone"}};
+        for(int i = 0; i < phones.length; i++) {
+            for(String str : phones[i]) {
+                System.out.println(str);
+            }
+        }
+
     }
 
 
