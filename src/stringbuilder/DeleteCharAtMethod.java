@@ -11,6 +11,9 @@ public class DeleteCharAtMethod {
         college.deleteCharAt(college.length() / 2);
         System.out.println(college);
 
+        StringBuilder name = new StringBuilder("Phillip");
+        name.deleteCharAt(2);
+        System.out.println(name);
 
 
     }
