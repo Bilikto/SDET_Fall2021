@@ -24,6 +24,13 @@ public class MapIntro {
      * replace(K, V) --> Method replaces the entry for the specified key only if it is currently mappingto some value.
      *                   This method returns the previous value associated with thespecified key.
      *
+     * keySet() --> returns a "Set" view of the keys contained in the map. Hence we can iterateover the keys of the map.
+     * values() --> returns a collection of values contained in the map.
+     * entrySet() --> entrySet(): returns a "Set" view of the mappings [aka entry --> key value pair] contained in this map.
+     * * getKey() --> Returns the key corresponding to this entry. (comes from Entry interface in Map interface).
+     * * getValue() --> Returns the value corresponding to this entry. (comes from Entry interface in Map interface).
+     * * setValue(V value) --> Replaces the value corresponding to this entry with the specified value (optional operation). (comes from Entry interface in Map interface).
+     *
      *
      *
      */

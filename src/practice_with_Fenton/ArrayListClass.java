@@ -31,17 +31,21 @@ public class ArrayListClass {
 //        System.out.println(wrapperInt2);
 
         int[] arrNums = {1, 5, 88, 98, 101};
+        ArrayList<int[]> listNums = new ArrayList<>(Arrays.asList(arrNums));
+        System.out.println(Arrays.toString(listNums.get(0)));
+
+
 //        List<Integer> arrN = new ArrayList<Integer>(Arrays.asList(arrNums));
 //        System.out.println(arrN.toArray());
 
-        ArrayList<Integer> numList = new ArrayList<>();
-        numList.add(Integer.valueOf(num1));
-        numList.add(num2);
-        numList.add(num3);
+//        ArrayList<Integer> numList = new ArrayList<>();
+//        numList.add(Integer.valueOf(num1));
+//        numList.add(num2);
+//        numList.add(num3);
 
-        String[] str = {"New York", "Washington", "Baltimore"};
-        ArrayList<String> strList = new ArrayList<>(Arrays.asList(str));
-        System.out.println(strList);
+//        String[] str = {"New York", "Washington", "Baltimore"};
+//        ArrayList<String> strList = new ArrayList<>(Arrays.asList(str));
+//        System.out.println(strList);
 
 
 
