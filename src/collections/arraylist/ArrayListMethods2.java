@@ -18,7 +18,7 @@ public class ArrayListMethods2 {
 
         //isEmpty()
         boolean hasElements = teslaModels.isEmpty();
-        System.out.println("Is teslaModels list emplty? " + hasElements);
+        System.out.println("Is teslaModels list empty? " + hasElements);
 
         //clear()
         teslaModels.clear();

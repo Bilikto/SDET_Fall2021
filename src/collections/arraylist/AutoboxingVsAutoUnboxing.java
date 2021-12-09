@@ -19,8 +19,14 @@ public class AutoboxingVsAutoUnboxing {
         Integer ageObj = age;
 
         //Unboxing
-        Character cObj = new Character('h');
-        char cPrimitive = cObj.charValue();
+        Character cObj = 'h';
+        char cPrimitive = cObj;
+        System.out.println(cPrimitive);
+
+        Double str = 12.0;
+        double dbl = str;
+        System.out.println(dbl);
+
 
         //Autoboxing
         Double temp = 87.45;
