@@ -525,7 +525,7 @@ Quotient: the answer.
       - We can remove [delete] character or sequence of characters from StringBuilder using delete() or deleteCharAt() methods
       - insert(index, char) -> with insert method we can insert characters into our stringBuilder object
 
-60.  What is a set collection?
+60.  What is a Set collection?
       - it's collection that doesn't allow duplicate elements
       - we cannot obtain elements by indexes
       - 3 implementations:
