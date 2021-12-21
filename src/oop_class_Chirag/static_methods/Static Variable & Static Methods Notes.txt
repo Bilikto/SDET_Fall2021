@@ -7,7 +7,7 @@ Static Variables
 
 
 Static Method 
-	* We don't required object to access static methods and we can directly use class name to acccess static members(variable + methods)
+	* We don't required object to access static methods and we can directly use class name to access static members (variable + methods)
 	* From static methods we can only call / use static members only
 
 *** Instance variable will get created in the memory when we create an object of the class 
