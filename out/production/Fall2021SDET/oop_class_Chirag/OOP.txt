@@ -1,0 +1,20 @@
+Basics of OOP
+	-Class
+	-Objects
+	-Constructor
+	-Static keyword
+	-Types of Variables(Local, Static, Instance)
+
+Inheritance
+	-extends keyword
+	-Constructor Chaining
+	-this keyword
+	-super keyword
+
+Polymorphism (real time example - keyboard key, person)
+	-Method Overloading
+	-Method Overriding
+	-Dynamic Polymorphism / Run Time Polymorphism
+
+
+
