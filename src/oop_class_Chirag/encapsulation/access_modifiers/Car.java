@@ -1,4 +1,4 @@
-package oop_class_Chirag.access_modifiers;
+package oop_class_Chirag.encapsulation.access_modifiers;
 
 public class Car {
     private int price = 1000;

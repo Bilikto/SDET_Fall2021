@@ -1,4 +1,4 @@
-package oop_class_Chirag.incapsulation;
+package oop_class_Chirag.encapsulation;
 
 public class CarTester {
     public static void main(String[] args) {
