@@ -1,7 +1,7 @@
 Inheritance - Child class can access members of parent class
 Advantange of Inheritance - Code optimization  / Reusability / Maintainbility
 
-How can we achieve inheritance in java - Using extends keyword
+How can we achieve inheritance in java - Using "extends" keyword
 
 Types of Variable
 

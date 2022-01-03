@@ -546,8 +546,6 @@ Quotient: the answer.
         is that Collection Interface add method returns boolean.
       - size() -> returns the number of elements in the list
 
-62.
-
 
 
 

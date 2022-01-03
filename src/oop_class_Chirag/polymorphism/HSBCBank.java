@@ -1,6 +1,6 @@
 package oop_class_Chirag.polymorphism;
 
-//created to use Dynamic Polymorphism!!!
+//Dynamic Polymorphism!!!
 class Bank {
     public void displayInterestRate() {
         System.out.println("");

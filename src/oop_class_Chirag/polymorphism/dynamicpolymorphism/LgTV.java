@@ -15,6 +15,7 @@ public class LgTV {
 }
 
 class SonyTV extends LgTV {
+    int chanelNums = 4;
 
     @Override
     void chanel1() {
@@ -33,6 +34,7 @@ class SonyTV extends LgTV {
     void chanel4() {
         System.out.println("4");
     }
+
 }
 
 class DynamicPolymorphism {
@@ -44,6 +46,16 @@ class DynamicPolymorphism {
         lg.chanel2();
 //        lg.chanel3(); //Error
 //        lg.chanel4(); //Error
+//        System.out.println(lg.chanelNums); //Error
+
+
+        //To get access to all methods we can explicitly cast Object
+        SonyTV sony = (SonyTV) lg;
+        sony.chanel1();
+        sony.chanel2();
+        sony.chanel3();
+        sony.chanel4();
+        System.out.println(sony.chanelNums); //Error
 
     }
 }
