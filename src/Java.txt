@@ -100,7 +100,59 @@ AUTOBOXING and UNBOXING:
 "Unboxing" is converting from wrapper object to primitive.
 
 
-CONTROL STATEMENTS:
+CONTROL FLOW STATEMENTS:
+Java provides 3 types of control flow statements:
+1. Decision Making statements
+    - if, if-else statements
+    - switch statements
+2. Loop statements
+    - do_while loop
+    - while loop
+    - for loop
+    - for_each loop
+3. Jump statements
+    - break statement
+    - continue statement
+
+"Decision Making statements" decide which statement to execute and when. It evaluates condition to Boolean expression.
+Ex: if(true) {...}
+"Switch" statement supports --> byte, short, int, char, Byte, Short, Integer, Character, String and enumeration.
+It doesn`t support --> double, float, boolean.
+Ex: switch(expr) {
+        case value1:
+            statement1;
+            break;
+        .
+        .
+        case valueN:
+            statementN;
+            break;
+        default:
+            default statement;
+}
+
+"Loop statements" are used to execute the set of instructions in a repeated order.
+"for loop": ---> for(int i = 0; i < 10; i++) {..}
+We use the "for loop" only when we exactly know the number of times, we want to execute the block of code.
+
+"for-each loop": ---> for(data_type var: array/collection) {...}
+Java provides an enhanced for loop to traverse the data structures like array or collection. In the for-each loop, we don't need to update the loop variable.
+
+"while loop" ---> while(condition) {...}
+If we don't know the number of iterations in advance, it is recommended to use a "while" loop
+
+"do_while loop" ---> do { statements } while(condition)
+When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
+
+"Jump statements" are used to transfer the execution control to the other part of the program.
+"break" is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement.
+However, it breaks only the inner loop in the case of the nested loop. The break statement cannot be used independently, it can only be written inside the loop or switch statement.
+"continue" doesn't break the loop, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
+
+
+
+
+
 
 
 

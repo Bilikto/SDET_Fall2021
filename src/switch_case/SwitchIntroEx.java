@@ -22,7 +22,7 @@ public class SwitchIntroEx {
 //        System.out.println(typeOfAnimal);
 
 
-//      switch doesn`t support: double, float, boolean, and String
+//      switch doesn`t support: double, float, boolean
         switch(animalName) {
             case "dog":
             case "cat":
