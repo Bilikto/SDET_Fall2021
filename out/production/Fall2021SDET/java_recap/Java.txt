@@ -118,6 +118,7 @@ Java provides 3 types of control flow statements:
 Ex: if(true) {...}
 "Switch" statement supports --> byte, short, int, char, Byte, Short, Integer, Character, String and enumeration.
 It doesn`t support --> double, float, boolean.
+The case value must be literal or constant! It doesn't allow variables.
 Ex: switch(expr) {
         case value1:
             statement1;
