@@ -151,6 +151,21 @@ However, it breaks only the inner loop in the case of the nested loop. The break
 "continue" doesn't break the loop, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
 
 
+COMMENTS IN JAVA
+Single line comment --> //
+Multiline comment   --> /*...*/
+Java Documentation comment -->   /**  (usually used to write large programs for a project or software
+                                 *    application as it helps to create documentation API)
+                                 *
+                                 * @author Bilikto
+                                 * @version 1.8
+                                 * @since 01/05/2022
+                                 */
+
+
+
+
+
 
 
 
