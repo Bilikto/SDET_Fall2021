@@ -163,49 +163,45 @@ Java Documentation comment -->   /**  (usually used to write large programs for 
                                  */
 
 
+OOP CONCEPTS
+ -Object
+ -Class
+ -Method
+ -Constructor
+ -Static keyword
+ -Types of Variables(Local, Static, Instance)
+ -Inheritance
+ -Polymorphism
+ -Abstraction
+ -Encapsulation
+There are some other terms which are used in OOP:
+ -Coupling (when a class has the details information of another class, it arises when classes are aware of each other)
+ -Cohesion (It refers to the level of a component which performs a single well-defined task)
+ -Association (It represents the relationship between the objects)
+ -Aggregation (It represents the relationship where one object contains other objects as a part of its state. It is also termed as a HAS-A relationship in Java)
+ -Composition (The composition represents the relationship where one object contains other objects as a part of its state.  There is a strong relationship between the containing object and the dependent object.
+               If you delete the parent object, all the child objects will be deleted automatically)
 
+Object
+Objects is any entity that has state abd behaviour (Ex: a chair, pen, table, dog, cat). It is an instance of a class.
 
+Class
+Class is collection of objects. It is a blueprint from which you can create an individual object.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-OOP:
-	-Class
-	-Objects
-	-Constructor
-	-Static keyword
-	-Types of Variables(Local, Static, Instance)
-
-Inheritance
+Inheritance --> when one object acquires all the properties and behaviors of parent object
 	-extends keyword
 	-Constructor Chaining
 	-"this" keyword
 	-"super" keyword
 
-Polymorphism (real time example - keyboard key, person)
+Polymorphism
 	-Method Overloading
 	-Method Overriding
 	-Dynamic Polymorphism / Run Time Polymorphism
 
 Encapsulation
     -Access modifier
-    -Getters $ Setters
+    -Getters & Setters
 
 Abstraction
     -Abstract Class
@@ -215,8 +211,52 @@ Exception Handling
     -try_catch_finally
 
 Generics
+    -<T>
 
+OOP vs PROCEDURE-ORIENTED PROGRAMMING
+1. OOPs makes development and maintenance easier, whareas, in a POP it is ot easy to mange if code grows as project size increase.
+2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere
+3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the OOP language.
 
+NAMING CONVENTION
+Start with the uppercase letter:
+Class --> It should be a noun such as Color, Button, System, Thread, etc.
+Interface --> It should be an adjective such as Runnable, Remote, ActionListener.
+Start with lowercase letter:
+Method --> It should be a verb such as main(), print(), println().
+Variable --> It should not start with the special characters like & (ampersand), $ (dollar), _ (underscore).
 
+Package --> It should be a lowercase letter such as java, lang. Multiple words are separated by dots (.) such as java.util.
+Constant --> It should be in uppercase letters such as RED, YELLOW. Multiple words are separated an underscore(_) such as MAX_PRIORITY.
+ +  camelCase!
 
+OBJECTS
+Object is any entity that has state and behavior. Ex: chair, pen, table etc.
+An object is an instance of a class.
+"State" --> represents the data(value) of an object
+"Behavior" --> represents the behaviour(functionality) of an object
+"Identity" --> every object has a a unique ID which is used by JVM to identity each object.
 
+CLASS
+It is a template or blueprint from which objects are created.
+Class contains:
+-Fields
+-Methods
+-Constructors
+-Blocks
+-Nested class and interface
+
+Instance variable
+- a variable which is created inside the class but outside the method, at class level
+- It doesn't get memory at compile time. It gets memory at runtime when an object or instance is created
+- It belongs to the objects
+- Instance variable initialized by default (default value for int - 0 & String - null)
+- Instance variable can be private, public
+- Instance variable can be final
+- Instance variable will have multiple copies with respect to number of object we're creating from class
+
+Method
+In Java, a method is like a function which is used to expose the behavior of an object
+Advantage of Method
+-Code Reusability
+-Code Optimization
