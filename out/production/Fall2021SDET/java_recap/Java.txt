@@ -102,7 +102,7 @@ AUTOBOXING and UNBOXING:
 
 CONTROL FLOW STATEMENTS:
 Java provides 3 types of control flow statements:
-1. Decision Making statements
+1. Decision Making statements (conditional statements)
     - if, if-else statements
     - switch statements
 2. Loop statements
@@ -120,7 +120,7 @@ Ex: if(true) {...}
 It doesn`t support --> double, float, boolean.
 The case value must be literal or constant! It doesn't allow variables.
 Ex: switch(expr) {
-        case value1:
+        case value1: // --> value1 must be final value! it can not be expression!
             statement1;
             break;
         .
@@ -260,3 +260,36 @@ In Java, a method is like a function which is used to expose the behavior of an 
 Advantage of Method
 -Code Reusability
 -Code Optimization
+
+========================================================================================================
+Recap class 01/08/2022 with Chirag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

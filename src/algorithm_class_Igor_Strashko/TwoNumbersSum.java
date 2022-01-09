@@ -10,7 +10,7 @@ public class TwoNumbersSum {
     }
 
     public static int[] getTwoNumberSum(int[] arr, int target) {
-        for(int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length; i = i + 2) {
             for(int j = i+1; j < arr.length; j++) {
                 int sum = arr[j] + arr[i];
                 if(sum == target) {
