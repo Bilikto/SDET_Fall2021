@@ -1,0 +1,129 @@
+Core Java(How to solve program) + OOP(Designing of program)
+
+Basics of Java
+	- Identifier - it's user defined name (variable, class, methods)
+
+		1) Allowed char - 0-9, a-z, $, _
+		2) It should not start with Digit 
+		3) We can't use keyword reserved by java
+		4) Case sensitive
+
+	- Naming convention
+		1) Variables / methods - camelCase
+		2) Class - StartEachWordFirstLetterCapital 
+		3) package - small case 
+		4) Constant - All Upper Case		
+
+	- Data types
+		1) byte		- 1 Byte (8 bit)
+		2) short	- 2
+		3) long 	- 8
+		4) int		- 4
+		5) float	- 4
+		6) double	- 8
+		7) boolean	- 1 bit
+		8) char		- 2 bytes
+		9) String	- depends on value
+
+	- Variables
+		int num1 = 10; 
+		int num2=10, num1=20;
+		String str; 
+		str = "Hello";
+
+Operators 
+
+	1) Arithmetic	- 		(+,-,/,*,%)
+	2) Logical	- 		(&&, ||, !)
+		- only works with boolean values
+	3) Comparision / Relational 	(>, <, >= ,<= ,== , !=)
+		- alwayse return boolean value
+	4) Increment / Decrement operator (++, --)
+	5) Assignment 	(=)
+
+	Example
+	 System.out.println(99 / 10);   9
+         System.out.println(12 / 10);   1
+         System.out.println(25 / 10);   2
+         
+         System.out.println(99 % 10);   9
+         System.out.println(12 %  10);  2
+         System.out.println(25 % 10);   5
+
+Conditional Statements
+	- If 
+	- If else
+	- Ladder If else 
+	- Nested If else 
+	- Switch 
+
+Looping Statement 
+	- For
+	- While
+	- Do-While
+	- For-each / enhance for loop
+
+Arrays
+	- 1D
+	- 2D 
+
+	1. Declare & initialize array
+		int a[] = {3,4,5,6};
+		int b[] = new int[5];
+		int data[][] = new int[4][5]
+
+	2. Find length of array	
+		System.out.println(a.length);
+
+	3. Initial value of array
+		System.out.println(b[0]);
+
+	4. ArrayIndexOutOfBound
+		System.out.println(b[5]);
+
+	5. Length of 2D Array
+		System.out.println(data.length); - 4
+		System.out.println(data[position].length); - 5
+
+String 
+
+Collection
+	- List
+	- Set
+	- Map
+
+Java Methods
+
+============================== OOPs Topics ==============================
+Basics of OOP
+	-Class
+	-Objects
+	-Constructor
+	-Static keyword
+	-Types of Variables(Local, Static, Instance)
+	
+Inheritance
+	-extends keyword
+	-Constructor Chaining
+	-this keyword
+	-super keyword
+	-final keyword
+	
+Polymorphism (real time example - keyboard key, person)
+	-Method Overloading
+	-Method Overriding
+	-Dynamic Polymorphism / Run Time Polymorphism
+	
+Encapsulation
+	- Access modifier
+	- Getters & Setters
+	
+Abstraction
+	- Abstract Class
+	- Interface
+	
+Exception Handling
+
+
+
+	
