@@ -214,7 +214,7 @@ Generics
     -<T>
 
 OOP vs PROCEDURE-ORIENTED PROGRAMMING
-1. OOPs makes development and maintenance easier, whareas, in a POP it is ot easy to mange if code grows as project size increase.
+1. OOPs makes development and maintenance easier, whareas, in a POP it is not easy to mange if code grows as project size increase.
 2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere
 3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the OOP language.
 
@@ -262,20 +262,23 @@ Advantage of Method
 -Code Optimization
 
 ========================================================================================================
+01/08/2022
+Revision class with Chirag!
 
-Recap class 01/08/2022 with Chirag
-
-We can`t override static methods it belongs to class!
+We can not override static methods it belongs to class!
 Ex: Parent p = new Child();
-    p.method(); // --> parent var will call "static" method of parent class
+    p.method(); // --> if we the method is overriden parent object "p" will call "static" method of parent class
 
+We can not override variables! // --> parent object will call variable of parent class!
 
-We can not override variables! // --> parent var will call variable of parent class!
+If Constructor is "private" we can not instantiate class.. we will get compilation error!
 
-If Constructor is "private" we can not instantiate class.. we will get compilation error.
+We can not use static methods and vars inside methods. Only at Class level.
 
 We can not call from static methods non - static method and variables.
-We can not use static methods and vars inside methods. Only at Class level.
+========================================================================================================
+
+
 
 
 
