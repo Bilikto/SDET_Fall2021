@@ -248,18 +248,58 @@ Class contains:
 
 Instance variable
 - a variable which is created inside the class but outside the method, at class level
-- It doesn't get memory at compile time. It gets memory at runtime when an object or instance is created
+- It doesn't get memory at compile time. It gets memory at runtime when an object or instance is created!
 - It belongs to the objects
 - Instance variable initialized by default (default value for int - 0 & String - null)
 - Instance variable can be private, public
 - Instance variable can be final
 - Instance variable will have multiple copies with respect to number of object we're creating from class
 
-Method
-In Java, a method is like a function which is used to expose the behavior of an object
-Advantage of Method
--Code Reusability
--Code Optimization
+METHOD
+In Java, a "method" is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation.
+Advantage of Method:
+-Code Reusability --> We write a method once and use it many times. We do not require to write code again and again.
+-Code Optimization --> we can easily modify code by adding and removing a chunk of code.
+Method declaration:
+access modifier, return type, methodName, parameterList,, method body.
+public int sum(int a, int b) {...body...}
+
+Method signature:
+Every method has a "method signature". It is a part of the "method declaration". It includes the method name and parameter list.
+Access Modifiers (specifier):
+- Public --> The method is accessible by all classes when we use public specifier in our application (even in different packages)
+- Private --> The method is accessible only in the classes in which it is defined
+- Protected --> The method is accessible within the same package or subclasses in a different package
+- Default (Package private) --> The method is visible only from the same package only. It is set by default, when we do not use any access modifiers.
+
+Return Type:
+Return type is a data type that the method returns. If the method does not return anything, we use "void" keyword.
+
+There are two types of methods:
+1. Predefined (or built-in) methods --> method that is already defined in the Java class libraries (Ex: length(), equals(), compareTo()..);
+2. User-defined methods --> method is written by programmer.
+
+Static method
+A method that has "static" keyword is known as static method. In other words, a method that belongs to a class rather than an instance
+of a class is known as a "static method". The main advantage of a static method is that we can call it without creating an object.
+It can access "static" data members and also change the value of it. The best example of a static method is the main() method.
+
+Instance method
+The method of the class is known as an "instance method". It is a non-static method defined in the class.
+Before calling or invoking the instance method, it is necessary to create an object of its class.
+There two types of instance methods:
+1. Accessor (or getters) method -->  It is used to get the value of the private field.
+2. Mutator (or setters) method --  It is used to set the value of the private field. It does not return anything.
+
+Abstract method
+The method that does not has method body is known as "abstract method". In other words, without an implementation is known as "abstract method".
+It always declares in the abstract class. If class uses abstract method it MUST be "abstract" Class.
+To create an abstract method, we use the keyword "abstract".
+
+Factory method
+It is a method that returns an object to the class to which it belongs. All static methods are factory methods.
+For example, NumberFormat obj = NumberFormat.getNumberInstance();
+
 
 ========================================================================================================
 01/08/2022
@@ -279,10 +319,30 @@ We can not call from static methods non - static method and variables.
 ========================================================================================================
 
 
+"NEW" Keyword
+The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
+
+3 ways to INITIALIZE object
+1. By reference variable
+    Ex:  Student s1=new Student();
+         s1.id=101;
+2. By method
+    Ex:  Student s1=new Student();
+         s1.initializerMethod(101);
+3. By constructor
+
+5 ways TO CREATE an object
+1. By new keyword
+2. By newInstance() method
+3. By clone() method
+4. BY deserialization
+5. By factory method
 
 
-
-
+ANONYMOUS OBJECT
+Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be used at the time of object creation only.
+If you have to use an object only once, an anonymous object is a good approach.
+Ex: new Calculator().method(); //we can call method through anonymous object
 
 
 
