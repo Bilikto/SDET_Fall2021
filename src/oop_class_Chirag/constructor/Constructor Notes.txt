@@ -5,7 +5,7 @@ Constructor
 3. It must not have return type
 4. It'll get called automatically when we create an object of class
 5. Constructor cannot be static
-6. Purpose - It helps to initialize object variabls 
+6. Purpose - It helps to initialize object variables
 7. When we don't have any constructor in the class, java will add
 default contructor but as soon as you'll add your own constructor in the 
 class java will remove / not add default constructor
