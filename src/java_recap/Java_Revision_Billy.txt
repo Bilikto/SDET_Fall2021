@@ -248,14 +248,14 @@ Class contains:
 -Blocks
 -Nested class and interface
 
-Instance variable
-- a variable which is created inside the class but outside the method, at class level
-- It doesn't get memory at compile time. It gets memory at runtime when an object or instance is created!
-- It belongs to the objects
-- Instance variable initialized by default (default value for int - 0 & String - null)
-- Instance variable can be private, public
-- Instance variable can be final
-- Instance variable will have multiple copies with respect to number of object we're creating from class
+INSTANCE VARIABLE (from Chirag class)
+---> a variable which is created inside the class but outside the method, at class level
+---> It doesn't get memory at compile time. It gets memory at runtime when an object or instance is created!
+---> It belongs to the objects
+---> Instance variable initialized by default (default value for int - 0 & String - null)
+---> Instance variable can be private, public
+---> Instance variable can be final
+---> Instance variable will have multiple copies with respect to number of object we're creating from class
 
 
 METHOD
@@ -419,12 +419,22 @@ Java static variable is shared to all objects !!!
     }
     Output: 1, 2, 3
 
+Static Variables (from Chirag class)
+---> Variable created at class level with static keyword are the Static variables
+---> It belongs to the class
+---> Static variable initialized by default (default value for int - 0 & String - null)
+---> Static variable can be private, public
+---> Static variable will have single copy at class level regardless of number of object we're creating from class
+---> Static variable can be final
+
+*** Instance variable will get created in the memory when we create an object of the class
+*** We don't required to create an object to call the static methods
+
 Static method
 If you apply static keyword with any method, it is known as "static method".
  - A static method belongs to the class rather than the object of a class.
  - A static method can be invoked without the need for creating an instance of a class.
  - A static method can access ONLY static data member and can change the value of it.
-
 Restrictions for static methods:
 1. The static method can not use non static data member or call non-static method directly
 2. "this" and "super" cannot be used in static context.
@@ -441,8 +451,103 @@ Ex: class A2{
 Output: static block is invoked
         Hello main
 
+LOCAL VARIABLES
+---> Variable created inside any blocks (for loop, methods, if condition), or not declared at class level are the local variables
+---> Local variable can be accessible only inside the blocks where it is created
+---> Local variable can not be static & can not be private, public
+---> Local variable must be initialized before use
+---> Local variable can be final
+
 
 "THIS" KEYWORD
+(from Chirag class)
+---> It's reference variable that refers to the current object
+---> This keyword can be used to access current class instance variables & methods
+---> this() keyword also used to call current class constructor from another current class constructor
+
+Rules of calling current class constructor from another constructor :
+1. this() --> will call no argument constructor & IT SHOULD BE THE FIRST STATEMENT ONLY
+2. this("data") --> will call parameterized constructor with String parameter
+
+Here is given the 6 usage of java "this" keyword:
+  1. this can be used to refer current class instance variable
+  2. this can be used to invoke current class method (implicitly)
+  3. this() can be used to invoke current class constructor.
+  4. this can be passed as an argument in the method call.
+  5. this can be passed as argument in the constructor call.
+  6. this can be used to return the current class instance from the method.
+
+Using "this" keyword we can distinguish local variable (parameters) and instance variable. Ex: this.name = name;
+If local variables(arguments) and instance variables are different, there is no need to use this keyword.
+
+You may invoke the method of the current class by using the this keyword.
+If you don't use the this keyword, compiler automatically adds this keyword while invoking the method.
+
+The this() constructor call can be used to invoke the current class constructor. It is used to reuse the constructor.
+In other words, it is used for constructor chaining.
+
+Rule: Call to this() must be the first statement in constructor!
+
+this: to pass as an argument in the method
+The this keyword can also be passed as an argument in the method. It is mainly used in the event handling.
+Ex: class S2{
+      void m(S2 obj){
+        System.out.println("method is invoked");
+      }
+      void p(){
+        m(this);
+      }
+      public static void main(String args[]){
+        S2 s1 = new S2();
+        s1.p();
+      }
+    }
+Output: method is invoked
+
+this: to pass as argument in the constructor call
+We can pass the this keyword in the constructor also. It is useful if we have to use one object in multiple classes.
+Ex: class B{
+        A4 obj;
+        B(A4 obj){
+            this.obj=obj;
+        }
+        void display(){
+            System.out.println(obj.data);//using data member of A4 class
+        }
+    }
+
+    class A4{
+        int data=10;
+        A4(){
+            B b=new B(this);
+            b.display();
+        }
+        public static void main(String args[]){
+        A4 a=new A4();
+        }
+    }
+Output: 10
+
+this: can be used to return current class instance
+We can return this keyword as an statement from the method. In such case, return type of the method must be the class type (non-primitive).
+Ex: lass A{
+        A getA(){ <--- method with return type!
+        return this;
+        }
+        void msg(){System.out.println("Hello java");}
+    }
+    class Test1{
+        public static void main(String args[]){
+            new A().getA().msg();
+        }
+    }
+Output: Hello java
+
+
+
+
+
+
 
 
 
