@@ -372,10 +372,77 @@ The parameterized constructor is used to provide different values to distinct ob
 Constructor overloading
 "Constructor overloading" in Java is a technique of having more than one constructor with different parameter lists.
 
+STATIC KEYWORD
+The "static" keyword in Java is used for memory management mainly (it saves memory).
+We can use "static" keyword with:
+ 1.variables,   3. blocks,
+ 2. methods,    4. nested classes.
+The static keyword belongs to the class than an instance of the class.
+
+Static variable
+Any variable with static keyword is known as "static variable".
+It'll create single copy at class level regardless of how many objects we're creating from class. Example - Family Income or College name of students.
+The static variable gets memory only once in the class area at the time of class loading.
+Java static variable is shared to all objects !!!
+ EX:
+    1. Program of the counter with NON-static variable
+    In this example, we have created an instance variable named count which is incremented in the constructor.
+    Since instance variable gets the memory at the time of object creation, each object will have the copy of the instance variable.
+    class Counter{
+        int count=0; //will get memory each time when the instance is created
+        Counter(){
+            count++;//incrementing value
+            System.out.println(count);
+        }
+
+        public static void main(String args[]){
+            Counter c1=new Counter(); //1
+            Counter c2=new Counter(); //1
+            Counter c3=new Counter(); //1
+        }
+    }
+    Output: 1, 1, 1
+
+    2. Program of counter by STATIC variable
+    class Counter{
+        static int count=0; //will get memory only once and retain its value
+        Counter(){
+            count++;//incrementing value
+            System.out.println(count);
+        }
+
+        public static void main(String args[]){
+            Counter c1=new Counter(); //1
+            Counter c2=new Counter(); //2
+            Counter c3=new Counter(); //3
+        }
+    }
+    Output: 1, 2, 3
+
+Static method
+If you apply static keyword with any method, it is known as "static method".
+ - A static method belongs to the class rather than the object of a class.
+ - A static method can be invoked without the need for creating an instance of a class.
+ - A static method can access ONLY static data member and can change the value of it.
+
+Restrictions for static methods:
+1. The static method can not use non static data member or call non-static method directly
+2. "this" and "super" cannot be used in static context.
+
+Static block
+ - Is used to initialize the static data member.
+ - It is executed before the main method at the time of classloading.
+Ex: class A2{
+      static{System.out.println("static block is invoked");}
+      public static void main(String args[]){
+       System.out.println("Hello main");
+      }
+    }
+Output: static block is invoked
+        Hello main
 
 
-
-
+"THIS" KEYWORD
 
 
 
