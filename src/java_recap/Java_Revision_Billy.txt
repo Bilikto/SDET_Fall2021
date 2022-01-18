@@ -581,10 +581,10 @@ child class constructor. This is called "Constructor Chaining".
 
 POLYMORPHISM
 
-"Method overloading"
+"METHOD OVERLOADING"
 "Method Overloading" --> when a class has multiple methods with same name but different parameters.
 Advantage of method overloading:
-Method overloading increases the readability of the program.
+- Method overloading increases the readability of the program.
 There are two ways to overload the method in java
 1. By changing number of arguments
 2. By changing the data type
@@ -601,7 +601,42 @@ The "short" datatype can be promoted to int, long, float or double.
 The "char" datatype can be promoted to int,long,float or double and so on.
 If there are matching type arguments in the method, type promotion is not performed!!!
 
-"Method overriding"
+"METHOD OVERRIDING"
+"Method overriding" --> when a subclass (child class) has the same method as declared in the parent class.
+In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as "method overriding".
+Usage of Java Method Overriding
+- Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+- Method overriding is used for runtime polymorphism
+
+Rules for Java Method Overriding:
+1. The method must have the same name as in the parent class
+2. The method must have the same parameter as in the parent class.
+3. There must be an IS-A relationship (inheritance).
+
+Can we override static method?
+No, a static method cannot be overridden. It is because the static method is bound with class whereas instance method is bound with an object.
+Static belongs to the class area, and an instance belongs to the heap area.
+
+Difference between "method overloading" and "method overriding"
+        "Method Overloading"                                                               "Method Overriding"
+1. Method overloading is used to increase the "readability"                1. Method overriding is used "to provide the specific implementation of the method"
+   of the program.                                                            that is already provided by its super class.
+2. Method overloading is performed within class.                           2. Method overriding occurs in two classes that have IS-A (inheritance) relationship.
+3. In case of method overloading, parameter must be different.             3. In case of method overriding, parameter must be same.
+4. Method overloading is the example of "COMPILE TIME" polymorphism.       4. Method overriding is the example of "RUN TIME" polymorphism.
+5.  Return type can be same or different in method overloading.            5. Return type must be same or covariant in method overriding.
+
+"COVARIANT Return Type"
+
+
+
+
+
+
+
+
+
+
 
 
 
