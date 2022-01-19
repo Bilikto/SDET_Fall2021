@@ -1,4 +1,4 @@
-package java_recap.java_practice;
+package java_recap;
 
 import java.util.HashSet;
 import java.util.List;
