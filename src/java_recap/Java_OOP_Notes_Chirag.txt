@@ -1,0 +1,268 @@
+=======================================================================================================
+			Class
+=======================================================================================================
+=> Class is a blueprint / Design / Template of an object
+
+=> We can have below members in the class 
+	* Variables or Attributes or Characteristics of an Object
+	* Methods or Behavior of Actions that Objecct can perform
+	* Constructor
+
+=======================================================================================================
+			Object
+=======================================================================================================
+
+=> Object is an instance of class
+
+=> Object is exist physically but class is a logical design / structure of an object
+
+Syntax to create an Object 
+
+	ClassName objectName = new ClassName();
+
+=======================================================================================================
+			Constructor
+=======================================================================================================
+ 
+=> Constructor is used to initialized the class variables 
+
+Rules Of Constructor 
+		- It is used to initialized class variables 
+		- It doesn't have return type
+		- Constructor name should be same as a class name 
+		- It'll get call when we create object of class
+		- It can have access modifier - public, private, protected, default 
+		- Constructor cannot be static
+
+Types of Constructor
+	1) Default constructor		- Constructor that is automatically created by java when we don't have any contructor in the class
+	2) No Argument Constructor	- Constructor created by user inside the class that is not taking any parameters 
+	3) Paramterized Constructor	- Constructor created by user inside the class that takes some parameters 
+
+=================================================================
+			Static Keyword
+=================================================================
+
+Static Variable 
+=> It belongs to the class (it's class property) and not to the object 
+=> Java will create single copy of static variable per class regardless of number of objects we're creating from the class
+=> We don't need to create object of the class to access the static variable. We can directly use ClassName.variableName
+
+Static Methods
+	- Static methods can access only static members (variabes + method)
+	- We don't need objects to call static methods, directly we can use ClassName.method();
+	
+
+Things you can make static
+	Method
+	Variable
+	Nested class
+	blocks
+
+Things you cannot make static
+	Constructor
+	Interface
+	Class
+	local variables
+
+----------------------------------------------------------------------------
+				Types Of Variables
+----------------------------------------------------------------------------
+
+Local Variables:
+	1) Variable created inside any blocks (for loop, methods, if condition), or not declared at class level are the local variables
+	2) Local variable can be accessible only inside the blocks where it is created
+	3) Local variable can not be static & can not be private, public
+	4) Local variable must be initialized before use
+	5) Local variable can be final
+
+Instance Variables:
+	1) Variable created at class level without static keyword are the instance variables
+	2) It belongs to the objects
+	3) Instance variable initialized by default (default value for int - 0 & String - null)
+	4) Instance variable can be private, public
+	5) Instance variable can be final
+	6) Instance variable will have multiple copies with respect to number of object we're creating from class
+
+Static Variables:
+	1) Variable created at class level with static keyword are the Static variables
+	2) It belongs to the class
+	3) Static variable initialized by default (default value for int - 0 & String - null)
+	4) Static variable can be private, public
+	5) Static variable will have single copy at class level regardless of number of object we're creating from class
+	6) Static variable can be final
+
+========================================================================================================
+					Inheritance
+========================================================================================================
+
+Inheritance in java is a mechanism in which Child class can acquires & access members(Variables & Methods) of Parent class
+
+Advantange of Inheritance - Code optimization  / Reusability / Maintainbility
+
+We can achieve inheritance in java Using "extends" keyword
+
+Types of Inheritance:
+
+1) Single 	- One class inherits members of another class, A-->B
+2) Multiple 	- One class inherits members from multiple class, A, C ---> B
+3) Multi-level	- One class inherits member of another class which is also inheriting members of some another class, A-->B-->C
+
+This Keyword: 
+	1) It's reference variable refers to object of current class
+	2) This keyword can be used to access current class variables & methods
+	3) This keyword also used to call current class constructor from another current class constructor
+
+Rules of calling current class constructor from another constructor :
+	1) this() --> will call no argument constructor & IT SHOULD BE THE FIRST STATEMENT ONLY
+	2) this("data") --> will call parameterized constructor with String parameter
+
+Super Keyword:
+	1) It's a reference variable refers to object of parent class
+	2) Super keyword can be used to access parent class variables & methods
+	3) Super keyword also used to call parent class constructor from child class constructor
+
+Rules of calling parent class constructor from child class constructor:
+	1) super() --> will call no argument constructor of parent class & IT SHOULD BE THE FIRST STATEMENT ONLY
+	2) super("data") --> will call parameterized constructor of parent class with String parameter
+
+ConstructorChaining:
+
+==> Constructor chaining is a mechanism when we create object of child class it'll call parent class constructor first & then it'll call
+    child class constructor.
+==> For Example we have parent class A---> B (child of A) ---> C (child of B)
+==> When we create object of class C then it'll call constructor of A first & then constructor of B,and then it'll call constructor of C
+
+=================================================================================================================================
+							Polymorphism
+=================================================================================================================================
+Polymorphism - Polymorphism is the ability of an object to take on many forms
+
+We can achieve polymorphism in java by 
+1) Method Overloading
+2) Method Overriding
+
+Method Overloading:
+	1) It's a design that java will allow to have more than one method in the same class with same name but you need to follow one of the two condition
+   		1) Either Number of Parameters Can be Different
+    		2) Or Type of Parameter can be different
+
+    Example - bookFlight(travelDate), bookFligth(travelDate, returnDate), bookFligth(travelDate, returnDate, additionalInstruction)
+
+
+Method Overriding: 
+	1) Method Overriding is a mechanism in java when we have two classes with parent child relationship, 
+	   child class can have same method name with same parameter that we have in parent but child class can change implementation. 
+
+   Example - Parent class Bank can have different implementation of displayRateOfInterest & 
+	     Child class HSBCBank can have differnt implementation of same method
+
+Dynamic polymorphism - Dynamic polymorphism is when we store object of child class into parent class reference variables
+
+Consider Below Example
+
+	class Parent{
+		public void doAction(){
+			System.out.println("Action from Parent");
+		}
+	}
+
+	class Child extends Parent{
+		public void doAction(){
+			System.out.println("Action from Child");
+		}
+	}
+
+Four Cases Can be Possible
+	1) Parent pp = new Parent(); 	pp.doAction(); 	- It'll print Action from Parent
+	2) Child cc = new Child();	cc.doAction();	- It'll print Action from Child
+	3) Parent pc = new Child();	pc.doAction();  - It'll print Action from Child
+	4) Child cp = new Parent();	cp.doAction();	- Invalid combination, we cannot store parent class object into child class reference
+
+=================================================================================================================================
+					Encapsulation
+=================================================================================================================================
+
+Encapsulation - Wrapping up data & methods into single class
+
+Access modifier - It'll specify the access level of class members
+	1. public   - anywhere
+	2. private  - within the class
+	3. protected - within the package + outside package (subclass only)
+	4. default  - within the package
+
+It's good practice to make all variables of our class private and we'll create public methods to provide read & write access
+to outside classes. These public methods called getters & setters
+
+=================================================================================================================================
+					Abstract Class
+=================================================================================================================================
+	
+What's abstract class?
+
+1) We can't create object of abstract class
+2) We need to use Abstract keyword
+3) We can have abstract as well as non abstract method  ---> 0 to 100% 
+4) It can have constructor & static method also 
+5) If we have at least one abstract method in the class we need make class abstract
+6) If we extends abstract class into child class, child class has a responsibility to
+implement all abstract methods of abstract class
+
+=================================================================
+					Interface
+=================================================================
+
+What's interface?
+1) We can't create object of interface
+2) It can have only abstract methods --> 100% abstraction 
+3) By default variables are public static & final  and methods are public & abstract
+4) We can't have constructor in interface
+5) When we implement an interface in a class, implemented methods of interface has to public
+6) Class can implement more than one interface at a time
+7) We need use implement keyword when we're implement interface in any class but interface we can 
+extends into another interface
+8) Inteface variables must be initialized at the time of declaration only
+9) Child class has to implement all methods of interface or child class needs to declare
+ abstract
+
+=========================================================================================================
+		Difference between abstract class & interface
+=========================================================================================================
+
+Abstract class 					Interface
+1) 0-100 abstraction				1) 100% abstract
+2) abstract keyword				2) Interface keyword to declare
+3) Constructor - Yes				3) Constructor - No
+4) Class cannot extends more than		4) Class can implement any number of interface 
+   one abstract class 
+5) Extended					5) Implemented
+6) Intance  - Y					6) Instance variable - No
+
+=========================================================================================================
+					Exception
+=========================================================================================================
+
+
+What's exception?
+Unwanted or unexpected even that occurs at run time that disturb the normal flow of execution
+
+Syntax for Try Catch
+
+try{
+
+}catch(ExceptionType e){
+
+}
+
+
+Finally keyword 
+-->Finally block will get executed regardless of we're getting exception or handling exception or not
+--> it follows the try or atch block
+
+
+Throw 
+-> It is used to throw our own exception
+
+Throws
+->It is used in method signature to notify caller method about method can throw listed exception 	
+
