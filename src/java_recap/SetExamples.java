@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class SetExample {
+public class SetExamples {
     public static void main(String[] args) {
         Set<String> strList = new HashSet<>();
         strList.add(null);

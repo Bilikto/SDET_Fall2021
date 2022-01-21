@@ -1,6 +1,6 @@
 package java_recap;
 
-public class ForLoopStatements {
+public class ForLoopExamples {
     public static void main(String[] args) {
 //        //Nested for loop
 //        for(int i = 1; i <= 3; i++) {

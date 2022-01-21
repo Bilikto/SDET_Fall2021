@@ -1,6 +1,6 @@
 package java_recap;
 
-public class SwitchStatement {
+public class SwitchExamples {
 
     //Enum in Switch Statement
     public enum Days {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
