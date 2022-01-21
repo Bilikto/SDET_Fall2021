@@ -148,9 +148,9 @@ If we don't know the number of iterations in advance, it is recommended to use a
 When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
 
 "Jump statements" are used to transfer the execution control to the other part of the program.
-"break" is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement.
-However, it breaks only the inner loop in the case of the nested loop. The break statement cannot be used independently, it can only be written inside the loop or switch statement.
-"continue" doesn't break the loop, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
+"break" ---> is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only
+             the inner loop in the case of the nested loop. The break statement cannot be used independently, it can only be written inside the loop or switch statement.
+"continue" ---> doesn't break the loop, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
 
 
 COMMENTS IN JAVA
@@ -163,7 +163,6 @@ Java Documentation comment -->   /**  (usually used to write large programs for 
                                  * @version 1.8
                                  * @since 01/05/2022
                                  */
-
 
 OOP CONCEPTS
  -Object
@@ -682,8 +681,31 @@ then there can be another thread performing a remove operation in a multithreadi
 
 "ArrayList"
 The ArrayList class implements the "List interface".
-It uses a "dynamic" array to store the duplicate element of different data types. The ArrayList class maintains the insertion order and is non-synchronized.
-The elements stored in the ArrayList class can be randomly accessed.
+Java ArrayList class uses a "dynamic" array for storing the elements. It is like an array, but there is no size limit. We can add or remove elements anytime.
+So, it is much more flexible than the traditional array.  It is found in the java.util package.
+The ArrayList in Java can have the duplicate elements also. It implements the List interface so we can use all the methods of List interface here.
+The ArrayList maintains the insertion order internally.
+It inherits the "AbstractList" class and implements "List" interface.
+Points to remember:
+1. Java ArrayList class can contain duplicate elements.
+2. Java ArrayList class maintains insertion order.
+3. Java ArrayList class is non-synchronized.
+4. Java ArrayList allows random access because array works at the index basis.
+5. In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+
+Syntax: public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
+Constructors of ArrayList:
+1. ArrayList(); --> It is used to build an empty array list.
+2. ArrayList(Collection<? extends E> c); --> It is used to build an array list that is initialized with the elements of the collection c.
+3. ArrayList(int capacity) --> It is used to build an array list that has the specified initial capacity.
+
+"Generic"
+Java collection framework was non-generic before JDK 1.5. Since 1.5, it is generic.
+ArrayList list=new ArrayList(); //creating old non-generic arraylist
+ArrayList<String> list=new ArrayList<String>();//creating new generic arraylist
+In a generic collection, we specify the type in angular braces. Now ArrayList is forced to have the only specified type of objects in it.
+If you try to add another type of object, it gives compile time error.
+
 
 "LinkedList"
 LinkedList implements the List interface.
@@ -754,13 +776,13 @@ A Map doesn't allow duplicate keys, but you can have duplicate values. HashMap a
 "TreeMap" ---> is the implementation of Map and SortedMap. It maintains ascending order.
 
 "Map.Entry" Interface
-Entry is the subinterface of Map. It returns a collection-view of the map, whose elements are of this class. It provides methods to get key and value.
+Entry is the sub-interface of Map. It returns a collection-view of the map, whose elements are of this class. It provides methods to get key and value.
 
 "HashMap"
 Java HashMap class implements the Map interface which allows us to store key and value pair, where keys should be unique.
 If you try to insert the duplicate key, it will replace the element of the corresponding key.
 It is easy to perform operations using the key index like updation, deletion, etc. HashMap class is found in the "java.util" package.
-HashMap is not synchronized. It allows us to store the "null" elements as well, but there should be only one null key.
+HashMap is non-synchronized. It allows us to store the "null" elements as well, but there should be only one null key.
 Since Java 5, it is denoted as HashMap<K,V>, where K stands for key and V for value.
 
 Points to remember:
@@ -773,9 +795,28 @@ Points to remember:
 
 You cannot store duplicate keys in HashMap. However, if you try to store duplicate key with another value, it will replace the value!!!
 
+"LinkedHashMap"
+It inherits HashMap class and implements the Map interface.
 
+Points to remember:
+1. Java LinkedHashMap contains values based on the key.
+2. Java LinkedHashMap contains unique elements.
+3. Java LinkedHashMap may have one null key and multiple null values.
+4. Java LinkedHashMap is non-synchronized.
+5. Java LinkedHashMap maintains insertion order.
+6. The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
 
+Syntax: public class LinkedHashMap<K,V> extends HashMap<K,V> implements Map<K,V>
 
+"TreeMap"
+Points to remember:
+1. Java TreeMap contains values based on the key. It implements the NavigableMap interface and extends AbstractMap class.
+2. Java TreeMap contains only unique elements.
+3. Java TreeMap cannot have a null key but can have multiple null values.
+4. Java TreeMap is non-synchronized.
+5. Java TreeMap maintains ascending order.
+
+Syntax: public class TreeMap<K,V> extends AbstractMap<K,V> implements NavigableMap<K,V>, Cloneable, Serializable
 
 
 
