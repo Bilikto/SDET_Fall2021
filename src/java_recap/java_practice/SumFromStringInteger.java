@@ -1,4 +1,4 @@
-package homeWorks;
+package java_recap.java_practice;
 
 public class SumFromStringInteger {
     public static void main(String[] args) {
