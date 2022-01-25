@@ -350,18 +350,18 @@ Ex: new Calculator().method(); //we can call method through anonymous object
 CONSTRUCTOR
 Constructor is a block of codes similar to the method. It is called when an instance of the class is created.
 At the time of calling constructor, memory for the object is allocated in the memory.
-Constructor is used to initialize the object.
-Every time when an object is created using the "new" keyword, at least one constructor is called.
-1. "Default" constructor --> if there is no constructor available in the class.
-2. "No-arg" constructor --> explicit constructor added by developer. We can write any statements inside explicit constructor
-3. "Parametrized" constructor --> explicit constructor added by developer which takes parameter from user.
-                                When we create an object of class we have to pass parameters to the constructor.
-
+Constructor is used to initialize the object variables.
 Constructor RULES:
 1. Constructor name must be the same as its class name.
 2. A Constructor must not have return type.
 3. A Constructor cannot be abstract, static, final and synchronized.
 4. A Constructor can have access modifier - public, private, protected, default .
+
+Every time when an object is created using the "new" keyword, at least one constructor is called.
+1. "Default" constructor --> if there is no constructor available in the class.
+2. "No-arg" constructor --> explicit constructor added by developer. We can write any statements inside explicit constructor
+3. "Parametrized" constructor --> explicit constructor added by developer which takes parameter from user.
+                                When we create an object of class we have to pass parameters to the constructor.
 
 What is the purpose of a default constructor?
 The default constructor is used to provide the default values to the object like 0, null, etc., depending on the type.
@@ -682,6 +682,48 @@ There are mainly three RULES for the instance initializer block. They are as fol
 1. The instance initializer block is created when instance of the class is created.
 2. The instance initializer block is invoked after the parent class constructor is invoked (i.e. after super() constructor call).
 3. The instance initializer block comes in the order in which they appear.
+
+
+FINAL KEYWORD
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context.
+Final can be:
+- variable
+- method
+- class
+
+The "final" keyword can be applied with the variables, a final variable that have no value it is called "blank final variable" or "uninitialized final variable".
+It can be initialized in the constructor only. The blank final variable can be static also which will be initialized in the "static block" only --> static {data = 50}
+
+final variable
+If you make any variable as final, you cannot change the value of final variable(It will be constant)
+final method
+If you make any method as final, you cannot override it.
+final class
+If you make any class as final, you cannot extend it.
+
+Is final method inherited?
+Yes, final method is inherited but you cannot override it.
+What is final parameter?
+If you declare any parameter as final, you cannot change the value of it.
+Ex: class Bike11{
+      int cube(final int n){
+      n = n + 2;    // can't be changed as n is final
+      n * n * n;
+    }
+    public static void main(String args[]){
+      Bike11 b=new Bike11();
+      b.cube(5);
+      }
+    }
+Can we declare a constructor final?
+No, because constructor is never inherited.
+
+
+RUNTIME (DYNAMIC) POLYMORPHISM
+
+
+
+
 
 
 

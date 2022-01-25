@@ -32,7 +32,7 @@ Rules Of Constructor
 		- Constructor name should be same as a class name 
 		- It'll get call when we create object of class
 		- It can have access modifier - public, private, protected, default 
-		- Constructor cannot be static
+		- Constructor cannot be static and final (there is no need to write final before constructors bc constructors cannot be inherited in Java)
 
 Types of Constructor
 	1) Default constructor		- Constructor that is automatically created by java when we don't have any contructor in the class
