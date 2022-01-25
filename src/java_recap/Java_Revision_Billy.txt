@@ -667,13 +667,21 @@ Usage of Java super Keyword
 3. super() can be used to invoke immediate parent class constructor. --> if there is no super() or this() it will added in each class constructor automatically by compiler.
 
 
+INSTANCE INITIALIZER BLOCK
+Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created.
+What is the use of instance initializer block while we can directly assign a value in instance data member? Why use instance initializer block?
+Suppose I have to perform some operations while assigning value to instance data member e.g. a for loop to fill a complex array or error handling etc.
+There are three places in java where you can perform operations:
+- method
+- constructor
+- block
+What is invoked first, instance initializer block or constructor? (see InitializerBlockExample.java)
+ The java compiler copies the code of instance initializer block in every constructor!!!
 
-
-
-
-
-
-
+There are mainly three RULES for the instance initializer block. They are as follows:
+1. The instance initializer block is created when instance of the class is created.
+2. The instance initializer block is invoked after the parent class constructor is invoked (i.e. after super() constructor call).
+3. The instance initializer block comes in the order in which they appear.
 
 
 
