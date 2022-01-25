@@ -649,9 +649,22 @@ Output: welcome to covariant return type
 In this example, the return type of the get() method of A class is A but the return type of the get() method of B class is B.
 Both methods have different return type but it is method overriding. This is known as "covariant return type".
 Advantages:
-1.Covariant return type assists to stay away from the confusing type casts in the class hierarchy and makes the code more usable, readable, and maintainable.
-2.In the method overriding, the covariant return type provides the liberty to have more to the point return types.
-3.Covariant return type helps in preventing the run-time ClassCastExceptions on returns.
+1. Covariant return type assists to stay away from the confusing type casts in the class hierarchy and makes the code more usable, readable, and maintainable.
+2. In the method overriding, the covariant return type provides the liberty to have more to the point return types.
+3. Covariant return type helps in preventing the run-time ClassCastExceptions on returns.
+
+
+SUPER KEYWORD
+1) It's a reference variable refers to object of parent class
+2) Super keyword can be used to access parent class variables & methods
+3) Super keyword also used to call parent class constructor from child class constructor
+
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable
+Usage of Java super Keyword
+1. super can be used to refer immediate parent class instance variable. --> if parent class and child class have same variables
+2. super can be used to invoke immediate parent class method. --> It should be used if subclass contains the same method as parent class (overridden method).
+3. super() can be used to invoke immediate parent class constructor. --> if there is no super() or this() it will added in each class constructor automatically by compiler.
 
 
 
