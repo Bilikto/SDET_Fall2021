@@ -817,9 +817,14 @@ It can store the duplicate elements. It maintains the insertion order. In Linked
 "Vector implements the List interface. Vector implements a dynamic array that means it can grow or shrink as required. It is synchronized.
 Like an array, it contains components that can be accessed using an integer index.
 
-
 "Stack"
-The stack is the subclass of "Vector". It implements the LIFO(last-in-first-out) data structure.
+The stack is the subclass of "Vector", it inherits Vector class. It implements the LIFO(last-in-first-out) data structure.
+Methods of stack:
+push() --> Pushes an element on the top of the stack.
+pop() --> Removes and returns the top element of the stack.
+peek() --> Returns the element on the top of the stack, but does not remove it.
+empty() --> It returns true if nothing is on the top of the stack. Else, returns false.
+
 
 "QUEUE INTERFACE"
 A "Queue interface" maintains the FIFO(First In First Out) order similar to a real-world queue line.
