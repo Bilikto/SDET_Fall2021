@@ -579,6 +579,8 @@ child class constructor. This is called "Constructor Chaining".
 
 
 POLYMORPHISM
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism.
+We can perform polymorphism in java by method "overloading" and method "overriding".
 
 "METHOD OVERLOADING"
 "Method Overloading" --> when a class has multiple methods with same name but different parameters.
@@ -720,6 +722,62 @@ No, because constructor is never inherited.
 
 
 RUNTIME (DYNAMIC) POLYMORPHISM
+"Runtime polymorphism" or "Dynamic Method Dispatch" is process when an overriden method is called through the reference variable of a superclass.
+Let's first understand the upcasting before Runtime Polymorphism:
+
+"Upcasting"
+If the reference variable of Parent class refers to the object of Child class, it is known as "upcasting".
+class A{}
+class B extends A{}
+A a=new B(); //upcasting
+In this example B IS-A A and B IS-A Object --> since Object is the root class of all classes in Java.
+For upcasting, we can use the reference variable of class type or an interface type.
+
+NOTE!
+A method is overridden, not the data members, so runtime polymorphism can't be achieved by data members!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
