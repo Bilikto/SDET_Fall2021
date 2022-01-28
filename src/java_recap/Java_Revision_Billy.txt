@@ -737,6 +737,66 @@ NOTE!
 A method is overridden, not the data members, so runtime polymorphism can't be achieved by data members!
 
 
+STATIC BINDING and DYNAMIC BINDING
+Connecting a method call to the method body is known as "binding".
+There are two types of binding
+1. Static Binding (also known as Early Binding).
+2. Dynamic Binding (also known as Late Binding).
+Understanding types
+Each variable has a type, it may be primitive and non-primitive (ex: int num = 30 --> here naum variable is a type of int);
+Each references have a type (ex: Dog d1; --> //here d1 is a type of Dog)
+Each Objects have a type (ex: Dog d1 = new Dog(); --> //here d1 is an instance of Dog class, but it is also an instance of Animal (if extends))
+
+Static Binding
+When type of the object is determined at compiled time (by the compiler, not JVM), it is known as "static binding".
+If there is any private, final or static method in a class, there is static binding.
+
+
+Dynamic Binding
+When type of the object is determined at run-time, it is known as "dynamic binding".
+class Animal{
+ void eat(){System.out.println("animal is eating...");}
+}
+
+class Dog extends Animal{
+ void eat(){System.out.println("dog is eating...");}
+ public static void main(String args[]){
+  Animal a=new Dog();
+  a.eat();
+ }
+}
+In the above example object type cannot be determined by the compiler, because the instance of Dog is also an instance of Animal.
+So compiler doesn't know its type, only its base type.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
