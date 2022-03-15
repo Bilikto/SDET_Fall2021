@@ -5,7 +5,7 @@
 
 => We can have below members in the class 
 	* Variables or Attributes or Characteristics of an Object
-	* Methods or Behavior of Actions that Objecct can perform
+	* Methods or Behavior of Actions that Object can perform
 	* Constructor
 
 =======================================================================================================
@@ -37,7 +37,7 @@ Rules Of Constructor
 Types of Constructor
 	1) Default constructor		- Constructor that is automatically created by java when we don't have any contructor in the class
 	2) No Argument Constructor	- Constructor created by user inside the class that is not taking any parameters 
-	3) Paramterized Constructor	- Constructor created by user inside the class that takes some parameters 
+	3) Parameterized Constructor	- Constructor created by user inside the class that takes some parameters
 
 =================================================================
 			Static Keyword
@@ -51,7 +51,16 @@ Static Variable
 Static Methods
 	- Static methods can access only static members (variabes + method)
 	- We don't need objects to call static methods, directly we can use ClassName.method();
-	
+
+Static "Nested" class
+    - Nested classes are divided into two categories: "static" and "non-static".
+    - A static class is a class that is created inside a class, is called a "static nested class" in Java.
+    - It cannot access non-static data members and methods.
+    - It can access static data members of the outer class, including private.
+    - Objects that are instances of an inner class exist within an instance of the outer class. It means --> to instantiate an inner class,
+      you must first instantiate the outer class. Then, create the inner object within the outer object: Ex: OuterClass outerObject = new OuterClass()
+                                                                                                             OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+    - It can be accessed by outer class name. ---> Ex: OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 
 Things you can make static
 	Method
@@ -62,7 +71,7 @@ Things you can make static
 Things you cannot make static
 	Constructor
 	Interface
-	Class
+	Class (outer)
 	local variables
 
 ----------------------------------------------------------------------------
@@ -104,8 +113,8 @@ We can achieve inheritance in java Using "extends" keyword
 
 Types of Inheritance:
 
-1) Single 	- One class inherits members of another class, A-->B
-2) Multiple 	- One class inherits members from multiple class, A, C ---> B
+1) Single 	- One class inherits members of another class, A --> B
+2) Multiple 	- Multiple classes inherit members from one class, A, C ---> B
 3) Multi-level	- One class inherits member of another class which is also inheriting members of some another class, A-->B-->C
 
 This Keyword: 
@@ -120,14 +129,13 @@ Rules of calling current class constructor from another constructor :
 Super Keyword:
 	1) It's a reference variable refers to object of parent class
 	2) Super keyword can be used to access parent class variables & methods
-	3) Super keyword also used to call parent class constructor from child class constructor
+	3) Super() keyword also used to call parent class constructor from child class constructor
 
 Rules of calling parent class constructor from child class constructor:
 	1) super() --> will call no argument constructor of parent class & IT SHOULD BE THE FIRST STATEMENT ONLY
 	2) super("data") --> will call parameterized constructor of parent class with String parameter
 
-ConstructorChaining:
-
+Constructor Chaining:
 ==> Constructor chaining is a mechanism when we create object of child class it'll call parent class constructor first & then it'll call
     child class constructor.
 ==> For Example we have parent class A---> B (child of A) ---> C (child of B)
@@ -145,21 +153,20 @@ We can achieve polymorphism in java by
 Method Overloading:
 	1) It's a design that java will allow to have more than one method in the same class with same name but you need to follow one of the two condition
    		1) Either Number of Parameters Can be Different
-    		2) Or Type of Parameter can be different
+    	2) Or Type of Parameter can be different
 
     Example - bookFlight(travelDate), bookFligth(travelDate, returnDate), bookFligth(travelDate, returnDate, additionalInstruction)
 
-
 Method Overriding: 
-	1) Method Overriding is a mechanism in java when we have two classes with parent child relationship, 
+	1) Method Overriding is a mechanism in java when we have two classes with parent-child relationship,
 	   child class can have same method name with same parameter that we have in parent but child class can change implementation. 
 
    Example - Parent class Bank can have different implementation of displayRateOfInterest & 
-	     Child class HSBCBank can have differnt implementation of same method
+	         Child class HSBCBank can have different implementation of same method
 
 Dynamic polymorphism - Dynamic polymorphism is when we store object of child class into parent class reference variables
 
-Consider Below Example
+Consider Below Example:
 
 	class Parent{
 		public void doAction(){
@@ -200,7 +207,7 @@ to outside classes. These public methods called getters & setters
 	
 What's abstract class?
 
-1) We can't create object of abstract class
+1) We cannot create object of abstract class
 2) We need to use Abstract keyword
 3) We can have abstract as well as non abstract method  ---> 0 to 100% 
 4) It can have constructor & static method also 
@@ -213,15 +220,15 @@ implement all abstract methods of abstract class
 =================================================================
 
 What's interface?
-1) We can't create object of interface
+1) We cannot create object of interface
 2) It can have only abstract methods --> 100% abstraction 
-3) By default variables are public static & final  and methods are public & abstract
+3) By default variables are public static & final and methods are public & abstract
 4) We can't have constructor in interface
 5) When we implement an interface in a class, implemented methods of interface has to public
 6) Class can implement more than one interface at a time
 7) We need use implement keyword when we're implement interface in any class but interface we can 
 extends into another interface
-8) Inteface variables must be initialized at the time of declaration only
+8) Interface variables must be initialized at the time of declaration only
 9) Child class has to implement all methods of interface or child class needs to declare
  abstract
 
@@ -229,19 +236,18 @@ extends into another interface
 		Difference between abstract class & interface
 =========================================================================================================
 
-Abstract class 					Interface
+Abstract class 					    Interface
 1) 0-100 abstraction				1) 100% abstract
-2) abstract keyword				2) Interface keyword to declare
+2) abstract keyword				    2) Interface keyword to declare
 3) Constructor - Yes				3) Constructor - No
-4) Class cannot extends more than		4) Class can implement any number of interface 
+4) Class cannot extends more than	4) Class can implement any number of interface
    one abstract class 
-5) Extended					5) Implemented
-6) Intance  - Y					6) Instance variable - No
+5) Extended					        5) Implemented
+6) Intance  - Yes					6) Instance variable - No
 
 =========================================================================================================
 					Exception
 =========================================================================================================
-
 
 What's exception?
 Unwanted or unexpected even that occurs at run time that disturb the normal flow of execution
@@ -252,17 +258,18 @@ try{
 
 }catch(ExceptionType e){
 
+} finally {
+
 }
 
-
 Finally keyword 
--->Finally block will get executed regardless of we're getting exception or handling exception or not
---> it follows the try or atch block
+--> Finally block will get executed regardless of we're getting exception or handling exception or not
+--> it follows the try or catch block
 
 
 Throw 
 -> It is used to throw our own exception
 
 Throws
-->It is used in method signature to notify caller method about method can throw listed exception 	
+-> It is used in method signature to notify caller method about method can throw listed exception
 
