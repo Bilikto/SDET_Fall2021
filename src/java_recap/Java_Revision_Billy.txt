@@ -616,6 +616,7 @@ Rules for Java Method Overriding:
 1. The method must have the same name as in the parent class
 2. The method must have the same parameter as in the parent class.
 3. There must be an IS-A relationship (inheritance).
+4. The method in the child class must be at least as accessible or more accessible than the method in the parent class.
 
 Can we override static method?
 No, a static method cannot be overridden. It is because the static method is bound with class whereas instance method is bound with an object.
@@ -985,7 +986,8 @@ It declares the methods that every collection will have.
 
 ====================================== LIST INTERFACE ======================================
 List interface is the child interface of Collection interface.
-List in Java provides the facility to maintain the ORDERED collection. It contains the index-based methods to insert, update, delete and search the elements.
+List in Java provides the facility to maintain the ORDERED collection.
+It contains the index-based methods to insert, update, delete and search the elements.
 It can have the duplicate elements also. We can also store the null elements in the list.
 List interface is implemented by the classes
     "ArrayList",
