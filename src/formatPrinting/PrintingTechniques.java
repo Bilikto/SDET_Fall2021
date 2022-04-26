@@ -1,4 +1,4 @@
-package mentorClass_Askar;
+package formatPrinting;
 
 public class PrintingTechniques {
     public static void main(String[] args) {

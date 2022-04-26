@@ -1,4 +1,4 @@
-package group_practice;
+package homeWorks;
 
 import homeWorks.Strings;
 

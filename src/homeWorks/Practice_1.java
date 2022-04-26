@@ -9,16 +9,16 @@ public class Practice_1 {
 
     public static void main(String[] args) {
         String strOne = "2aw22awd22a23awd";
-        //StringBuilder newStr = new StringBuilder();
+        StringBuilder newStr = new StringBuilder();
 
-        strOne = strOne.replace("2", "");
+//        strOne = strOne.replace("2", "");
 
-//        for(int i=0; i<strOne.length(); i++) {
-//            while(strOne.charAt(i) == '2') {
-//                i++;
-//            }
-//            newStr.append(strOne.charAt(i));
-//        }
+        for(int i=0; i<strOne.length(); i++) {
+            while(strOne.charAt(i) == '2') {
+                i++;
+            }
+            newStr.append(strOne.charAt(i));
+        }
         System.out.println(strOne);
     }
 }
