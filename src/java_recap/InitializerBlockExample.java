@@ -7,15 +7,20 @@ public class InitializerBlockExample {
     }
 }
 
-class Bike{
-    int speed;
+class ParentBike{
+    public ParentBike() {
+        System.out.println("Parent constructor is invoked");
+    }
+}
 
+class Bike extends ParentBike {
+    int speed;
     public Bike() {
-        System.out.println("constructor is invoked");
+        System.out.println("Child constructor is invoked");
     }
 
     //instance initializer block
-    { System.out.println("instance initializer block invoked"); }
+    { System.out.println("Instance initializer block invoked"); }
 }
 
 //The java compiler copies the code of instance initializer block in every constructor!!!
