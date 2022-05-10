@@ -11,9 +11,8 @@ public class PalindromIntExample {
 
     public static boolean isPalindromeInt(int x) {
 
-
         //#1 Converting to String
-/*        String n = Integer.toString(x);
+        String n = Integer.toString(x);
         int i = 0;
         int j = n.length()-1;
 
@@ -25,21 +24,21 @@ public class PalindromIntExample {
             j--;
         }
 
-        return true;*/
+        return true;
 
 
         //#2 Without converting --> using % and / operators
-        int temp = x;
-        int lastDigit = 0;
-        int reversedNum = 0;
-
-        while(temp > 0) {
-            lastDigit = temp % 10;
-            reversedNum = reversedNum * 10 + lastDigit;
-            temp = temp / 10;
-        }
-
-        return reversedNum == x;
+//        int temp = x;
+//        int lastDigit = 0;
+//        int reversedNum = 0;
+//
+//        while(temp > 0) {
+//            lastDigit = temp % 10;
+//            reversedNum = reversedNum * 10 + lastDigit;
+//            temp = temp / 10;
+//        }
+//
+//        return reversedNum == x;
     }
 }
 /*
