@@ -11,7 +11,7 @@ public class BufferReaderExamples {
         FileReader fr = new FileReader("C:\\Users\\dashi\\Desktop\\DevX workspace\\Lessons\\Fall2021SDET\\src\\file_readers\\testout.txt");
         BufferedReader br = new BufferedReader(fr);
 
-        int i = 0;
+        int i;
         while((i = br.read()) != -1) {
             System.out.print((char)i);
         }

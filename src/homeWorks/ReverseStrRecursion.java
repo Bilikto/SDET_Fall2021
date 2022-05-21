@@ -1,6 +1,6 @@
 package homeWorks;
 
-public class reverseStrRecursion {
+public class ReverseStrRecursion {
     public static void main(String[] args) {
         String str = "Washington";
 
