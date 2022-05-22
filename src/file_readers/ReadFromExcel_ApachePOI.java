@@ -1,19 +1,16 @@
-//package file_readers;
-//
+package file_readers;
+
 //import org.apache.poi.ss.usermodel.*;
-//import org.apache.poi.xssf.usermodel.XSSFSheet;
-//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-//import org.apache.poi.ss.usermodel.*;
-//
-//import java.io.File;
-//import java.io.FileInputStream;
-//
-//public class ReadFromExcel_ApachePOI {
-//    public static void main(String[] args) throws Exception {
-//
-//        //System.getProperty("user.dir") fetches the directory or path of the workspace for the current project
-//        File f = new File(System.getProperty("user.dir") + "\\src\\file_readers\\sampledatasafety.xlsx");
-//        FileInputStream fileInputStream = new FileInputStream(f);
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class ReadFromExcel_ApachePOI {
+    public static void main(String[] args) throws Exception {
+
+        //System.getProperty("user.dir") fetches the directory or path of the workspace for the current project
+        File f = new File(System.getProperty("user.dir") + "\\src\\file_readers\\sampledatasafety.xlsx");
+        FileInputStream fileInputStream = new FileInputStream(f);
 //        Workbook workBook = WorkbookFactory.create(fileInputStream);
 //        Sheet sheetName = workBook.getSheet("SafetyData");
 //
@@ -32,5 +29,5 @@
 //                System.out.println(testData[i-1][j]);
 //            }
 //        }
-//    }
-//}
+    }
+}
